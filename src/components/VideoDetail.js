@@ -12,7 +12,7 @@ const VideoDetail = ({ selectedVideo }) => {
     return (
         <section>
             <div className="embed-responsive embed-responsive-16by9">
-                <iframe className="embed-responsive-item" src={videoUrl} allowFullScreen></iframe>
+                <iframe className="embed-responsive-item" src={videoUrl} title={selectedVideo.snippet.title} allowFullScreen></iframe>
             </div>
             <h2>{selectedVideo.snippet.title}</h2>
             <p>{selectedVideo.snippet.description}</p>
